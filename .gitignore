@@ -35,11 +35,15 @@
 *.idx
 *.ilg
 *.ind
-
 *.dvi
 *.ps
 
 ############################################
 # do not upload secret infomation
+
 myresume.tex
 myresume.pdf
+
+############################################
+# exclude files
+!resuem.pdf
