@@ -4,11 +4,13 @@
 最近在网上找简历模板的时候被推荐了billryan老师的简历模板，但是这位老师提供的中文模板没有照片位置，于是简单修改了一下。注意照片大小需根据实际调整。
 
 ## 样例对比
-修改后：
+修改后：![after](https://github.com/user-attachments/assets/2a739fac-cb50-4252-bd54-b2b3e2ee55aa)
 
 
 
-修改前：
+
+修改前：![before](https://github.com/user-attachments/assets/a421a482-b90a-4cf1-972b-bfc420fff89c)
+
 
 
 
