@@ -1,0 +1,95 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{progressbar}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+\usepackage{linespacing_fix} % disable extra space before next section
+
+
+\begin{document}
+\pagenumbering{gobble} % 禁止显示页码
+% \Large{
+% 	\begin{tabu}{ l l r}
+% 		\scshape{袁斌} & & \multirow{5}{5in}{\includegraphics[width=0.88in]{avatar}} \\
+% 		\email{yourE-mail@gmail.com} & & \\
+% 		\phone{(+86) 131-221-87xxx} & & \\
+% 		年龄：24岁 & & \\
+%     性别：男 & & \\ 
+% 		& %\github[github.com/billryan]{https://github.com/billryan}  %github or blog
+%     \end{tabu}
+% }
+\noindent
+\begin{minipage}[t]{0.6\textwidth}  % 左侧信息栏
+  {\LARGE \hspace{1em}\textbf{张三}} \par\vspace{1em}  % 姓名用大号加粗
+  \begin{tabular}{>{\bfseries}l @{\hspace{1.3em}} l}  % 加粗标签列
+    \hspace{1em}\vspace{5pt}电话 & 138-1234-5678 \\
+    \hspace{1em}\vspace{5pt}邮箱 & zhangsan@email.com \\
+    \hspace{1em}\vspace{5pt}QQ & 123456789 \\
+    \hspace{1em}\vspace{5pt}性别 & 男 \\ 
+    \hspace{1em}年龄 & 28 \\
+  \end{tabular}
+\end{minipage}
+\hfill  
+\begin{minipage}[t]{0.3\textwidth}  % 右侧照片栏
+  \vspace{0pt} % 顶部对齐修正
+  \includegraphics[width=0.8\linewidth,keepaspectratio]{photo.jpg} 
+  % 替换 photo.jpg 为实际照片路径，建议使用证件照比例
+\end{minipage}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
+\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
+\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
+\textit{学士}\ 通信工程
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
+\role{实习}{经理: 高富帅}
+xxx后端开发
+\begin{itemize}
+  \item 实现了 xxx 特性
+  \item 后台资源占用率减少8\%
+  \item xxx
+\end{itemize}
+
+\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
+\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\begin{onehalfspacing}
+分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\begin{itemize}
+  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
+  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
+  \item xxx (尽量使用量化的客观结果)
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C == Python > C++ > Java
+  \item 平台: Linux
+  \item 开发: xxx
+\end{itemize}
+
+\section{\faHeartO\ 其他经历与荣誉}
+\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+\datedline{其他奖项}{2015}
+
+\section{\faInfo\ 其他/自我介绍}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 技术博客: http://blog.yours.me
+  \item GitHub: https://github.com/username
+  \item 语言: 英语 - 熟练(TOEFL xxx)
+\end{itemize}
+
+\end{document}
